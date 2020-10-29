@@ -1,0 +1,121 @@
+.note
+  position: relative
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px
+  font-size: 20px
+  font-weight: 500
+  border-bottom: 1px solid #3d3d3d
+  @media ( max-width: 768px )
+    font-size: 17px
+  @media ( max-width: 420px )
+    font-size: 14px
+  &:nth-of-type(1)
+    border-top: 1px solid #3d3d3d
+.buttons
+  flex: 0 0 20%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  margin-top: 2px
+  @media ( max-width: 768px )
+    flex: 0 0 30%
+.buttonsComplete
+  justify-content: flex-end
+.icon
+  position: relative
+  width: 40px
+  height: 40px
+  font-size: 30px
+  color: #f33d3d
+  border: none
+  border-radius: 10px
+  background-color: transparent
+  cursor: pointer
+  margin-right: 10px
+  outline: none
+  transition: 0.2s
+  &:hover
+    color: #c50606
+    @media ( min-width: 769px )
+      .popup
+        opacity: 1
+  &:last-of-type
+    margin-right: 0
+  @media ( max-width: 768px )
+    width: 30px
+    height: 30px
+    font-size: 20px
+  @media ( max-width: 420px )
+    margin-right: 3px
+.iconGreen
+  color: #1fd304
+  &:hover
+    color: #1ba805
+  .popup
+    background-color: #1fd304
+.iconFavourites
+  color: #47acff
+  &:hover
+    color: #036bc0
+  .popup
+    background-color: #47acff
+.date
+  flex: 0 0 20%
+  text-align: center
+  margin-right: 10px
+  @media ( max-width: 420px )
+    margin-right: 4px
+.title
+  flex: 0 0 45%
+  margin-right: 10px
+  @media ( max-width: 420px )
+    margin-right: 4px
+.newNoteButtons
+  flex: 0 0 30%
+  height: 100%
+  display: flex
+  justify-content: space-around
+.button
+  display: flex
+  flex: 0 0 25%
+  height: 100%
+  align-items: center
+  justify-content: space-around
+  padding: 5px
+  font-size: 25px
+  background-color: #47acff
+  border: 1px solid #0083d4
+  border-radius: 10px
+  color: #ffffff
+  position: relative
+  outline: none
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 3px 3px 6px #006394
+  transition: 0.3s
+  &:hover
+    background-color: #3cbfff
+    cursor: pointer
+    color: #332333
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset, 3px 3px 6px #006394
+  &:active
+    transform: translate(2px,2px)
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset
+.delete
+  display: none
+.popup
+  position: absolute
+  z-index: 100
+  top: 45px
+  left: 50%
+  transform: translate(-50%,0)
+  font-size: 15px
+  color: #ffffff
+  border-radius: 15px
+  background-color: #f33d33
+  padding: 10px
+  opacity: 0
+  pointer-events: none
+  transition: 0.5s
+  @media ( max-width: 768px )
+    display: none

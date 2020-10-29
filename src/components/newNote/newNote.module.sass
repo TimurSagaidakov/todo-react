@@ -1,0 +1,93 @@
+.newNote
+  height: 50px
+  display: flex
+  align-items: center
+  margin: 10px 0
+  @media ( max-width: 520px )
+    margin: 0
+    height: 35px
+.button
+  display: flex
+  width: 150px
+  height: 100%
+  align-items: center
+  justify-content: space-around
+  padding: 5px
+  font-size: 25px
+  background-color: #47acff
+  border: 1px solid #0083d4
+  border-radius: 10px
+  color: #ffffff
+  position: relative
+  outline: none
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 3px 3px 6px #006394
+  transition: 0.3s
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  &:hover
+    background-color: #3cbfff
+    cursor: pointer
+    color: #332333
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset, 3px 3px 6px #006394
+  &:active
+    transform: translate(2px,2px)
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset
+  @media ( max-width: 998px )
+    width: 120px
+    font-size: 20px
+  @media ( max-width: 768px )
+    width: 100px
+.input
+  flex: 0 0 0%
+  position: relative
+  width: 0%
+  opacity: 0
+  height: 100%
+  padding: 0 15px
+  font-size: 20px
+  transition: 0.5s
+  margin-left: 15px
+  @media ( max-width: 768px )
+    margin-left: 0
+  input
+    width: 100%
+    height: 100%
+    border: 1px solid #47acff
+    outline: none
+    font-size: 20px
+    padding-left: 10px
+.buttonSend
+  position: absolute
+  top: 0
+  right: -11px
+  height: 100%
+  width: 41px
+  border: 1px solid #000
+  font-size: 15px
+  border: none
+  border-radius: 0px 10px 10px 0
+  color: #fff
+  background-color: #47acff
+  outline: none
+  cursor: pointer
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  &:hover
+    color: #6bf856
+  @media ( max-width: 768px )
+    right: 0
+.buttonNew
+  width: 90%
+  display: flex
+  justify-content: space-between
+  align-items: center
+.buttonNewPen
+  @media ( max-width: 768px )
+    font-size: 15px
+.buttonNewClose
+  width: auto
+.inputOn
+  flex: 0 0 70%
+  width: 70%
+  opacity: 1
+.disabled
+  pointer-events: none
+  background-color: #bac7d1

@@ -1,0 +1,105 @@
+.container
+  flex: 0 0 73%
+  margin: 0 auto
+  position: relative
+  padding: 0 2%
+  padding-bottom: 80px
+.newNote
+  height: 50px
+  display: flex
+  align-items: center
+  margin: 10px 0 10px
+.header
+  display: flex
+  align-items: center
+  justify-content: space-between
+.input
+  flex: 0 0 0%
+  position: relative
+  width: 0%
+  opacity: 0
+  height: 100%
+  padding: 0 15px
+  font-size: 20px
+  transition: 0.5s
+  margin-left: 15px
+  input
+    width: 100%
+    height: 100%
+    border: 1px solid #47acff
+    outline: none
+    font-size: 20px
+    padding-left: 10px
+  button
+    position: absolute
+    top: 0
+    right: -11px
+    height: 100%
+    width: 41px
+    border: 1px solid #000
+    font-size: 15px
+    border: none
+    border-radius: 0px 10px 10px 0
+    color: #fff
+    background-color: #47acff
+    outline: none
+    cursor: pointer
+.inputOn
+  flex: 0 0 70%
+  width: 70%
+  opacity: 1
+.note
+  display: flex
+  justify-content: space-between
+  align-items: center
+  padding: 10px
+  font-size: 20px
+  border-bottom: 1px solid #3d3d3d
+.buttons
+  display: flex
+  align-items: center
+  justify-content: space-between
+.button
+  display: flex
+  flex: 0 0 25%
+  height: 100%
+  align-items: center
+  justify-content: space-around
+  padding: 5px
+  font-size: 25px
+  background-color: #47acff
+  border: 1px solid #0083d4
+  border-radius: 10px
+  color: #ffffff
+  position: relative
+  outline: none
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 3px 3px 6px #006394
+  transition: 0.3s
+  &:hover
+    background-color: #3cbfff
+    cursor: pointer
+    color: #332333
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset, 3px 3px 6px #006394
+  &:active
+    transform: translate(2px,2px)
+    box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset
+.deleteAll
+  height: auto
+  position: absolute
+  bottom: 15px
+  right: 15px
+  &:hover
+    color: #fff
+    background-color: #f33d33
+    box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, 3px 3px 6px #f33d33
+    border: 1px solid #f33d33
+  @media ( max-width: 998px )
+    font-size: 15px
+.nonAuth
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 40px
+  text-align: center
+

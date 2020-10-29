@@ -1,0 +1,39 @@
+.fade
+  &-enter
+    opacity: 0
+    &-active
+      opacity: 1
+      transition: opacity 200ms
+  &-exit
+    opacity: 1
+    &-active
+      opacity: 0
+      transition: opacity 200ms
+.input-anim
+  &-enter
+    opacity: 0
+    &-active
+      opacity: 1
+      transition: opacity 200ms
+  &-exit
+    opacity: 1
+    &-active
+      opacity: 0
+      transition: opacity 200ms
+
+.notes
+  &-exit
+    &-active
+      animation: note 0.7s ease-out forwards
+  &-enter
+    &-active
+      animation: note 0.7s ease-in alternate-reverse
+@keyframes note
+  0%
+    transform: translateY(0)
+  30%
+    opacity: 0.7
+    transform: translateY(10px)
+  100%
+    opacity: 0
+    transform: translateY(-50px)

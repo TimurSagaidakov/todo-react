@@ -1,0 +1,48 @@
+.container
+  flex: 0 0 25%
+  height: 100%
+  border-right: 2px solid #3d3d3d
+  ul
+    list-style: none
+  @media ( max-width: 756px )
+    display: flex
+    border-right: none
+    border-bottom: 2px solid  #3d3d3d
+    justify-content: space-between
+    padding: 0 10px
+.point
+  padding: 20px 0
+  border-bottom: 2px solid #3d3d3d
+  font-size: 25px
+  @media (max-width: 998px)
+    font-size: 15px
+    border: none
+  @media (max-width: 520px)
+    font-size: 10px
+.link
+  display: flex
+  align-items: center
+  text-decoration: none
+  color: #000000
+  span
+    margin-left: 10px
+    flex: 0 0 75%
+    @media ( max-width: 520px )
+      margin-left: 5px
+  svg
+    flex: 0 0 20%
+    font-size: 40px
+    color: #47acff
+    @media (max-width: 998px)
+      font-size: 25px
+    @media (max-width: 756px)
+      flex: 0 0 0%
+    @media (max-width: 520px)
+      font-size: 18px
+.activeLink
+  color: #1fd304
+  svg 
+    color: #1fd304
+.dark
+  color: #ffffff
+  background-color: #000000

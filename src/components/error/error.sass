@@ -1,0 +1,72 @@
+.fade
+  &-enter
+    opacity: 0
+    &-active
+      opacity: 1
+      transition: opacity 200ms
+  &-exit
+    opacity: 1
+    &-active
+      opacity: 0
+      transition: opacity 200ms
+.error
+  position: absolute
+  top: 70px
+  right: 0
+  z-index: 2
+  background-color: #cc2f2f
+  color: #ffffff
+  border-radius: 10px
+  padding: 10px
+  font-weight: 500
+  letter-spacing: 0.5px
+  backdrop-filter: blur(1px)
+  text-align: center
+  @media ( max-width: 768px )
+    top: 57px
+    right: 30px
+    font-size: 15px
+    letter-spacing: normal
+  @media ( max-width: 520px )
+    width: 60%
+    top: -60px
+    right: 50%
+    transform: translate(50%,0)
+  &::before
+    content: ''
+    position: absolute
+    top: -30%
+    transform: translate(0,-20%)
+    left: 20px 
+    display: block
+    border: 10px solid transparent
+    border-bottom: 10px solid #cc2f2f
+    @media ( max-width: 520px )
+      display: none
+.noteWarning,.noteDelete,.success
+  position: absolute
+  z-index: 100
+  top: 10px
+  left: 50%
+  transform: translate(-50%,0)
+  background-color: #1fd304
+  border-radius: 10px
+  color: #ffffff
+  font-weight: 500
+  letter-spacing: 0.5px
+  padding: 10px
+  backdrop-filter: blur(50px)
+  text-align: center
+  @media ( max-width: 768px )
+    top: 57px
+    right: 30px
+    font-size: 15px
+    letter-spacing: normal
+  @media ( max-width: 520px )
+    width: 60%
+    top: -60px
+.noteDelete
+  background-color: #cc2f2f
+.success
+  @media ( max-width: 768px )
+    top: -60px
