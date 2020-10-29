@@ -7,6 +7,8 @@ import Loader from '../loader/loader';
 import { Route } from 'react-router-dom';
 import Notes from '../notes/notes';
 import Error from '../error/error';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faGithub} from '@fortawesome/free-brands-svg-icons';
 
 const Main = (props) => {
   //  Вытаскиваем данные из redux
@@ -45,6 +47,10 @@ return <>
       <Route path="/regular" render={ () =><Notes filter={regular} newNote={true}/>}/>
       <Route path="/important" render={ () =><Notes filter={important}/>}/>
       <Route path="/complete" render={ () =><Notes filter={complete}/>}/>
+      <a  href='https://github.com/TimurSagaidakov/todo-react' className={s.linkGit}>
+          <FontAwesomeIcon icon ={faGithub} />
+          <span>Исходники на GitHub</span>
+        </a>
       {forDeleteAll&&<button className={`${s.button} ${s.deleteAll}`} onClick={()=>onToDeleteAll()}> Удалить все задачи </button>}
     </div>
   : <div className={s.nonAuth} >Войдите в свой аккаунт google</div>
